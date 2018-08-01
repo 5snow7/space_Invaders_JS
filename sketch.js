@@ -1,10 +1,12 @@
 let cntbullits;let xcor=30;
 let cnthits;let ball_test;
 let balllist=[];let bull=[];let bs,bu;
-let bb,ballch,can1;
+let bb,ballch,can1,mess;
 function setup() {
-	can1=createCanvas(800,500);can1.position(300,50);
-  b_draw=new bullit(xcor,height-30);b_draw.rect_b(30,470);
+	can1=createCanvas(800,450);can1.position(200,30);
+	can1.class("can1");
+	mess=select("#mess1");mess.class("mess");mess.position(30,50);
+	  b_draw=new bullit(xcor,height-30);b_draw.rect_b(30,470);
  cntbullits=0;cnthits=0;
 ball_test=new ball();
  for(let j=0;j<5;j++){
@@ -32,7 +34,7 @@ ball_test=new ball();
 
  for(let j=0;j<bull.length;j++){ bu=bull[j];bu.moveBullit();
  if(bu.isdead()){bull.splice(j,1);}
- 
+
 }
 
  colls(balllist,bull);
