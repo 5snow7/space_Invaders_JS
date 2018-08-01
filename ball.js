@@ -13,4 +13,3 @@ update(){fill(250,0,0);ellipse(this.x,this.y,20,10);
 }
 isdead(){if(this.cnt>3){return true;}else{return false;}}
 }
-3
