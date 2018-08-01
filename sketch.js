@@ -1,9 +1,9 @@
 let cntbullits;let xcor=30;
 let cnthits;let ball_test;
 let balllist=[];let bull=[];let bs,bu;
-let bb,ballch;
+let bb,ballch,can1;
 function setup() {
-	createCanvas(800,500);
+	can1=createCanvas(800,500);can1.position(250,50);
   b_draw=new bullit(xcor,height-30);b_draw.rect_b(30,470);
  cntbullits=0;cnthits=0;
 ball_test=new ball();
