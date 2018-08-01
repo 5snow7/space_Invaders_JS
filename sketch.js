@@ -1,8 +1,8 @@
 let cntbullits;let xcor=30;
-let cnthits;let ball_test;
+let cnthits;let ball_test;bullspeed=4;
 let balllist=[];let bull=[];let bs,bu;
-let bb,ballch,can1,mess;
-function setup() {
+let bb,ballch,can1,mess,inp;
+function setup() {textSize(36);
 	can1=createCanvas(800,450);can1.position(200,30);
 	can1.class("can1");
 	mess=select("#mess1");mess.class("mess");mess.position(30,50);
@@ -13,6 +13,8 @@ ball_test=new ball();
    balllist.push(new ball());}
  //for(int j=0;j<1;j++){
    bull.push(new bullit(30,height-40));
+inp=createInput(5);inp.class("mess");inp.position(30,150);
+inp.changed(()=>{bullspeed=inp.value();});
 }
 
  let ch=0;
@@ -24,7 +26,7 @@ ball_test=new ball();
    background(250,200,0);
    b_draw.rect_b(xcor,height-40);
 
-
+textSize(24);
  for(let j=0;j<balllist.length;j++){
     bs=balllist[j];//textSize(24);
 	text("# of balls is "+balllist.length,30,30);

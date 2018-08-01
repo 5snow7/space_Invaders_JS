@@ -1,7 +1,7 @@
 class bullit{
 
 constructor( xs, ys){this.x=xs;this.y=ys;
-    this.yspd=4;}
+    this.yspd=bullspeed;}
 set_bullit( xs, ys){this.x=xs;this.y=ys;}
 moveBullit(){fill(0,250,0);ellipse(this.x,this.y,5,5);
   this.y=this.y-this.yspd;}
