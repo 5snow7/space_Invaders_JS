@@ -47,8 +47,8 @@ textSize(24);
 
  function keyPressed(){
    if(keyCode==UP_ARROW){bull.push(new bullit(xcor,height-40));cntbullits++;}
-    if(keyCode==LEFT_ARROW){xcor=xcor-5;b_draw.rect_b(xcor,height-40);}
-		if(keyCode==RIGHT_ARROW){xcor=xcor+5;b_draw.rect_b(xcor,height-40);}
+    if(keyCode==LEFT_ARROW){xcor=xcor-15;b_draw.rect_b(xcor,height-40);}
+		if(keyCode==RIGHT_ARROW){xcor=xcor+15;b_draw.rect_b(xcor,height-40);}
  }
 
  function colls(bal, bu){
