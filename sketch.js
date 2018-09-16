@@ -37,6 +37,7 @@ textSize(24);
  for(let j=0;j<bull.length;j++){ bu=bull[j];bu.moveBullit();
  if(bu.isdead()){bull.splice(j,1);}
 
+
 }
 
  colls(balllist,bull);
@@ -46,10 +47,12 @@ textSize(24);
  }
 
  function keyPressed(){
-   if(keyCode==UP_ARROW){bull.push(new bullit(xcor,height-40));cntbullits++;}
+if(keyIsPressed){
+	 if(keyCode==UP_ARROW){bull.push(new bullit(xcor,height-40));cntbullits++;}
     if(keyCode==LEFT_ARROW){xcor=xcor-15;b_draw.rect_b(xcor,height-40);}
 		if(keyCode==RIGHT_ARROW){xcor=xcor+15;b_draw.rect_b(xcor,height-40);}
  }
+}
 
  function colls(bal, bu){
   for(let j=0;j<bal.length;j++){
