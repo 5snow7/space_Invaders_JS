@@ -23,7 +23,7 @@ inp.changed(()=>{bullspeed=inp.value();});
  function draw(){
    framecnt++;
    if(framecnt%50==0){balllist.push(new ball());}
-   background(250,200,0);
+   background(250,200,20);
    b_draw.rect_b(xcor,height-40);
 
 textSize(24);
