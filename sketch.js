@@ -41,7 +41,7 @@ textSize(24);
 }
 
  colls(balllist,bull);
- text("# of hits is "+cnthits,500,50);
+ text("# of hits is "+cnthits,400,50);
  text("# of shots fired is "+cntbullits,500,30);
 
  }
